@@ -13,7 +13,7 @@ header {
   height: 64px;
 }
 
-nav {
+.navigation-menu nav {
   display: none;
 }
 
@@ -40,4 +40,39 @@ input[type="checkbox"]:checked ~ nav {
 .list-links li a {
   color: var(--text-secondary-color);
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px){
+    
+    .navigation-menu {
+    
+    }
+    
+    .navigation-menu nav {
+        display: block;
+    }
+
+    .navigation-menu label {
+        display: none;
+    }
+
+      .navigation-menu input {
+        display: none;
+    }
+
+    .list-links {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        width: 476px;
+        font-size: 24px;
+    }
+
+    .list-links li {
+        padding: 0;
+    }
+
+
+
 }
