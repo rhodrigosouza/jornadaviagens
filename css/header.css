@@ -1,4 +1,4 @@
-header {
+.page-header {
   background-color: var(--background-tertiary-color);
   display: flex;
   align-items: center;
@@ -51,11 +51,6 @@ input[type="checkbox"]:checked ~ nav {
 }
 
 @media screen and (min-width: 768px){
-    
-    .navigation-menu {
-    
-    }
-    
     .navigation-menu nav {
         display: block;
     }
@@ -85,7 +80,7 @@ input[type="checkbox"]:checked ~ nav {
 
 @media screen and (min-width: 1024px){
     
-    header {
+    .page-header {
         padding: 37px 120px;
     }
     
