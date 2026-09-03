@@ -1,3 +1,10 @@
+.offers-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
 .card {
   color: var(--text-secondary-color);
   width: 312px;
@@ -57,6 +64,14 @@
   background-image: url(../img/card-manaus-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .offers-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1024px) {
