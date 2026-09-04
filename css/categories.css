@@ -13,5 +13,21 @@
     padding: 41px 16px;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
+.card-category span {
+    color: #8C8C8C;
+    font-size: 80px;
+}
+
+.card-category h3 {
+    color: var(--text-primary-color);
+    font-size: 28px;
+    font-weight: var(--title-weight);
+    text-align: center;
+}
