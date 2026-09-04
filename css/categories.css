@@ -1,0 +1,17 @@
+.categories-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 88px;
+}
+
+.card-category {
+    width: 312px;
+    height: 220px;
+    background-color: #F5F5F5cc;
+    padding: 41px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
