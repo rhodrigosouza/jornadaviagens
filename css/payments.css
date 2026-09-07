@@ -78,3 +78,44 @@
     grid-area: img3;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .payment-section {
+    max-width: 1200px;
+    grid-template-areas:
+      "texto img1 img2"
+      ". img3 img3";
+  }
+
+  .payment-img1 {
+    width: 383px;
+    height: 254px;
+    background-image: url(/img/payment-img-1-desktop.png);
+    grid-area: img1;
+  }
+
+  .payment-img2 {
+    width: 383px;
+    height: 254px;
+    background-image: url(/img/payment-img-2-desktop.png);
+    grid-area: img2;
+  }
+
+  .payment-img3 {
+    width: 790px;
+    height: 182px;
+    background-image: url(/img/payment-img-3-desktop.png);
+    grid-area: img3;
+  }
+
+  .payment-section h2 {
+    grid-area: texto;
+    align-self: start;
+
+  }
+
+  .payment-section p {
+    grid-area: texto;
+    align-self: center;
+  }
+}
