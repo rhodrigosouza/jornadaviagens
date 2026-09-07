@@ -1,0 +1,121 @@
+.payments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 88px;
+}
+
+.payment-section {
+  display: grid;
+  grid-template-areas:
+    "titulo titulo"
+    "texto texto "
+    "img1 img2"
+    "img3 img3";
+  gap: 24px;
+  max-width: 312px;
+}
+
+.payment-section h2 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  grid-area: titulo;
+}
+
+.payment-section p {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  grid-area: texto;
+  line-height: 1.5;
+}
+
+.payment-img1 {
+  width: 144px;
+  height: 254px;
+  background-image: url(/img/payment-img-1-mobile.png);
+  grid-area: img1;
+}
+
+.payment-img2 {
+  width: 144px;
+  height: 254px;
+  background-image: url(/img/payment-img-2-mobile.png);
+  grid-area: img2;
+}
+
+.payment-img3 {
+  width: 312px;
+  height: 182px;
+  background-image: url(/img/payment-img-3-mobile.png);
+  grid-area: img3;
+}
+
+@media screen and (min-width: 768px) {
+  .payment-section {
+    max-width: 648px;
+  }
+
+  .payment-img1 {
+    width: 312px;
+    height: 254px;
+    background-image: url(/img/payment-img-1-tablet.png);
+    grid-area: img1;
+  }
+
+  .payment-img2 {
+    width: 312px;
+    height: 254px;
+    background-image: url(/img/payment-img-2-tablet.png);
+    grid-area: img2;
+  }
+
+  .payment-img3 {
+    width: 648px;
+    height: 182px;
+    background-image: url(/img/payment-img-3-tablet.png);
+    grid-area: img3;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .payment-section {
+    max-width: 1200px;
+    grid-template-areas:
+      "texto img1 img2"
+      ". img3 img3";
+  }
+
+  .payment-img1 {
+    width: 383px;
+    height: 254px;
+    background-image: url(/img/payment-img-1-desktop.png);
+    grid-area: img1;
+  }
+
+  .payment-img2 {
+    width: 383px;
+    height: 254px;
+    background-image: url(/img/payment-img-2-desktop.png);
+    grid-area: img2;
+  }
+
+  .payment-img3 {
+    width: 790px;
+    height: 182px;
+    background-image: url(/img/payment-img-3-desktop.png);
+    grid-area: img3;
+  }
+
+  .payment-section h2 {
+    grid-area: texto;
+    align-self: start;
+
+  }
+
+  .payment-section p {
+    grid-area: texto;
+    align-self: center;
+  }
+}
