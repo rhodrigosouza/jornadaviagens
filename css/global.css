@@ -60,6 +60,14 @@ body {
     text-align: center;
 }
 
+
+@media screen and (max-width: 767px) {
+  .section-title {
+  width: 280px ;
+  margin: 0 auto;
+}
+}
+
 @media screen and (min-width: 768px) {
   .section-title h2 {
   font-size: 32px;
