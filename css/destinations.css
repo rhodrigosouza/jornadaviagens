@@ -3,13 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.section-destinations {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 32px;
 }
 
@@ -48,6 +41,16 @@
 
 .background-destinations.osaka {
   background-image: url(/img/destination-osaka.jpg);
+}
+
+@media screen and (max-width: 767px) {
+  .background-destinations.tokyo {
+    background-image: url(/img/destination-tokyo-mobile.jpg);
+  }
+
+  .background-destinations.osaka {
+    background-image: url(/img/destination-osaka-mobile.jpg);
+  }
 }
 
 @media screen and (min-width: 768px) {
