@@ -9,27 +9,26 @@
 
 .payment-section {
   display: grid;
-  grid-template-areas: 
-  "titulo titulo"
-  "texto texto "
-  "img1 img2"
-  "img3 img3";
+  grid-template-areas:
+    "titulo titulo"
+    "texto texto "
+    "img1 img2"
+    "img3 img3";
   gap: 24px;
   max-width: 312px;
-  
 }
 
 .payment-section h2 {
-    font-size: 28px;
-    font-weight: var(--title-weight);
-    grid-area: titulo;
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  grid-area: titulo;
 }
 
 .payment-section p {
-    font-size: 20px;
-    font-weight: var(--text-weight);
-    grid-area: texto;
-    line-height: 1.5;
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  grid-area: texto;
+  line-height: 1.5;
 }
 
 .payment-img1 {
@@ -51,4 +50,31 @@
   height: 182px;
   background-image: url(/img/payment-img-3-mobile.png);
   grid-area: img3;
+}
+
+@media screen and (min-width: 768px) {
+  .payment-section {
+    max-width: 648px;
+  }
+
+  .payment-img1 {
+    width: 312px;
+    height: 254px;
+    background-image: url(/img/payment-img-1-tablet.png);
+    grid-area: img1;
+  }
+
+  .payment-img2 {
+    width: 312px;
+    height: 254px;
+    background-image: url(/img/payment-img-2-tablet.png);
+    grid-area: img2;
+  }
+
+  .payment-img3 {
+    width: 648px;
+    height: 182px;
+    background-image: url(/img/payment-img-3-tablet.png);
+    grid-area: img3;
+  }
 }
