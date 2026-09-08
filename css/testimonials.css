@@ -1,0 +1,55 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 88px;
+}
+
+.testimonials .section-testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 88px;
+  max-width: 312px;
+}
+
+.testimonials .section-testimonials .testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.testimonials .section-testimonials .testimonial .testimonial-text {
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.testimonials .section-testimonials .testimonial .textimonial-person-rate {
+  display: grid;
+  gap:0 24px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+  "img nome"
+  "img stars";
+}
+
+.testimonials .section-testimonials .testimonial .textimonial-person-rate img {
+ grid-area: img;
+ width: 86px;
+ height: 86px;
+}
+
+.testimonials .section-testimonials .testimonial .textimonial-person-rate h3 {
+grid-area: nome;
+align-self:self-end;
+}
+
+.testimonials .section-testimonials .testimonial .textimonial-person-rate .star-container {
+grid-area: stars;
+align-self:center;
+color: var(--secondary-color);
+font-size: 32px;
+}
