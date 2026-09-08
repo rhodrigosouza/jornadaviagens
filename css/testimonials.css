@@ -25,6 +25,7 @@
 .testimonials .section-testimonials .testimonial .testimonial-text {
   line-height: 28px;
   font-size: 16px;
+  font-weight: var(--text-weight);
 }
 
 .testimonials .section-testimonials .testimonial .textimonial-person-rate {
@@ -45,6 +46,8 @@
 .testimonials .section-testimonials .testimonial .textimonial-person-rate h3 {
   grid-area: nome;
   align-self: self-end;
+  font-size: 20px;
+  font-weight: var(--title-weight);
 }
 
 .testimonials
@@ -66,9 +69,22 @@
   .testimonials .section-testimonials .testimonial .textimonial-person-rate {
     display: grid;
     gap: 0 2px;
-    grid-template-columns: 0.75fr 4fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-areas:
       "img nome"
       "img stars";
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonials .section-testimonials {
+    max-width: 1200px;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .testimonials .section-title {
+    margin-bottom: 32px;
   }
 }
