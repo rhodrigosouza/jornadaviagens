@@ -47,3 +47,6 @@ footer {
     font-weight: var(--text-weight);
 }
 
+.footer-section-bottom .social-icons a {
+    text-decoration: none;
+}
