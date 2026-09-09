@@ -1,0 +1,102 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-header {
+  width: 100%;
+  height: 400px;
+  background-image: url(/img/footer-img-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-section-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-secondary-color);
+  background-color: var(--background-tertiary-color);
+  width: 100%;
+  gap: 32px;
+  padding: 32px;
+}
+
+.footer-section-bottom .text-logo-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-section-bottom .text-logo-footer .logo-footer {
+  width: 162px;
+  height: 40px;
+}
+
+.footer-section-bottom .text-logo-footer .footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.footer-section-bottom h3,
+h4 {
+  max-width: 312px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: var(--text-weight);
+}
+
+.footer-section-bottom .social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section-bottom .social-icons .icons a {
+  text-decoration: none;
+}
+
+.footer-section-bottom .social-icons h4 {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-header {
+    background-image: url(/img/footer-img-tablet.png);
+  }
+
+  .footer-section-bottom h3 {
+    max-width: 648px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-header {
+    background-image: url(/img/footer-img-desktop.png);
+    height: 600px;
+  }
+
+  .footer-section-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px 120px;
+  }
+
+  .footer-section-bottom .text-logo-footer {
+    align-items: baseline;
+  }
+
+  .footer-section-bottom .text-logo-footer .footer-text {
+    align-items: baseline;
+  }
+}
